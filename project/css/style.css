@@ -1,0 +1,821 @@
+:root{
+    --main-color: #5E4220;
+    --black:#222;
+    --white:#fff;
+    --light-black: #777;
+    --light-white:#fff9;
+    --dark-bg:rgba(0,0,0,.7);
+    --light-bg:#eee;
+    --border:.1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --text-shadow: 0 1.5rem 3rem rgba(0,0,0,.3);
+}
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: var(--main-color);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #E4D9CC;
+}
+
+section{
+    padding: 3rem;
+}
+
+
+
+/* HEADER */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0 100px;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .header nav ul li a {
+    display: block;
+    padding: 10px 25px;
+    border-radius: 40px;
+    transition: 0.2s;
+    margin: 0 5px;
+    font-size: 20px;
+    color: var(--main-color);
+  }
+  
+  .header nav ul li a:hover {
+    color: #E4D9CC;
+    background: var(--main-color);
+  }
+  
+  .header nav ul li a.active {
+    color: #E4D9CC;
+    background: var(--main-color);
+  }
+  
+
+
+
+/* DESC */
+.desc{
+    display: flex;
+    width: auto;
+    height: 450px;
+    align-items: center;
+    font-size: 20px;
+    justify-content: space-evenly;
+}
+
+.desc .visi{
+    line-height: 1.6;
+}
+
+
+
+/* ABOUT */
+.home-about{
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-about .content{
+    flex: 1 1 41rem;
+    padding: 3rem;
+    background: var(--light-bg);
+    flex-direction: row;
+    line-height: 1.8;
+}
+
+.home-about .content h3{
+    font-size: 3rem;
+    color: #5E4220;
+}
+
+.home-about .content p{
+    font-size: 14px;
+    color: #5E4220;
+}
+
+.home-about .content .btn{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    border: none;
+    color: #E4D9CC;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 160px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.home-about .content .btn span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.home-about .content .btn span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.home-about .content .btn:hover span{
+    padding-right: 25px;
+}
+
+.home-about .content .btn:hover span::after{
+    opacity: 1;
+    right: 0;
+}
+
+
+
+/* MASTERPIECES */
+.masterpieces{
+    padding-top: 10px;
+    color: var(--main-color);
+    text-align: center;
+    font-size: 18px;
+    width: auto;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.masterpieces .box-container{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.masterpieces .box-container p{
+    padding-top: 10px;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+.masterpieces .box-container a .btn{
+    background-color: var(--main-color);
+    border: none;
+    color: #E4D9CC;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.masterpieces .btn{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    border: none;
+    color: #E4D9CC;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 160px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.masterpieces .btn span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.masterpieces .btn span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.masterpieces .btn:hover span{
+    padding-right: 25px;
+}
+
+.masterpieces .btn:hover span::after{
+    opacity: 1;
+    right: 0;
+}
+
+
+
+/* MERCH */
+.merch{
+    background: var(--light-bg);
+    padding-top: 60px;
+    color: var(--main-color);
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+
+.merch h1{
+    font-size: 34px;
+}
+
+.merch .box-container{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2.5rem;
+}
+
+.merch .box-container .box{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    margin: 10px;
+    width: 340px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+
+.merch .box-container .box p{
+    padding-top: 20px;
+    font-size: 14px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 1.4;
+}
+
+.merch .box-container .box h3{
+    padding-top: 20px;
+}
+
+.merch .box-container .box img{
+    padding-top: 30px;
+}
+
+.merch .btn{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    border: none;
+    color: #E4D9CC;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 160px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.merch .btn span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.merch .btn span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.merch .btn:hover span{
+    padding-right: 25px;
+}
+
+.merch .btn:hover span::after{
+    opacity: 1;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!-- ABOUT PAGE --> */
+/* ABOUT */
+.about{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 80px;
+}
+
+.about .content{
+    width: auto;
+    height: auto;
+    flex: 1 1 41rem;
+    padding: 3rem;
+    background: var(--light-bg);
+    flex-direction: row;
+    line-height: 1.8;
+}
+
+.about .content h3{
+    font-size: 3rem;
+    color: #5E4220;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.about .content p{
+    font-size: 14px;
+    color: #5E4220;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-indent: 30px;
+}
+
+
+
+/* REVIEW */
+.review{
+    margin-top: 80px;
+    color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review h3{
+    font-size: 36px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.review .box-container{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2.5rem;
+}
+
+.review .box-container .box{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    margin: 10px;
+    width: 240px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+
+.review .box{
+    padding: 2rem;
+    border: var(--border);
+    background: var(--white);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.review .box img{
+    padding-bottom: 20px;
+}
+
+.review .box-container .box h3{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.review .box-container .box h4{
+    font-size: 16px;
+    line-height: 2;
+}
+
+.review .box-container .box p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.review .box-container .box p .star{
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!-- PROD PAGE --> */
+/* SIGNATURE */
+.menu{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #5E4220;
+}
+
+.menu h1{
+    color: var(--main-color);
+    font-size: 34px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.menu .box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.menu .box .content{
+    flex: 1 1 41rem;
+    padding: 2rem;
+    background: var(--light-bg);
+    flex-direction: row;
+    line-height: 1.8;
+}
+
+.menu .box .content h3{
+    font-size: x-large;
+}
+.menu .box .content p{
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
+
+
+/* <!-- MERCH PAGE --> */
+/* MERCH */
+.merch{
+    background: var(--light-bg);
+    padding-top: 60px;
+    color: var(--main-color);
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+
+.merch h1{
+    font-size: 34px;
+}
+
+.merch .box-container{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2.5rem;
+}
+
+.merch .box-container .box{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    margin: 10px;
+    width: 340px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+
+.merch .box-container .box p{
+    padding-top: 20px;
+    font-size: 14px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 1.4;
+}
+
+.merch .box-container .box h3{
+    padding-top: 20px;
+}
+
+.merch .box-container .box img{
+    padding-top: 30px;
+}
+
+.merch .btn{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    border: none;
+    color: #E4D9CC;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 160px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.merch .btn span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.merch .btn span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.merch .btn:hover span{
+    padding-right: 25px;
+}
+
+.merch .btn:hover span::after{
+    opacity: 1;
+    right: 0;
+}
+
+
+
+
+
+
+/* <!-- BUY PAGE --> */
+.buy{
+    margin: 100px;
+}
+.buy .buy-form{
+    padding: 50px;
+    background: var(--light-bg);
+}
+
+.buy .heading-title{
+    color: #5E4220;
+    font-size: 36px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.buy .buy-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 60px;
+}
+
+.buy .buy-form .flex .inputBox{
+    flex: 1 1 41rem;
+}
+
+.buy .buy-form .flex .inputBox input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.buy .buy-form .flex .inputBox input:focus{
+    background: #E4D9CC;
+    color: var(--main-color);
+}
+
+.buy .buy-form .flex .inputBox span{
+    color: var(--main-color);
+    font-size: 16px;
+}
+.buy .btn{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    border: none;
+    color: #E4D9CC;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 160px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    
+}
+
+.buy input:hover{
+    background: #E4D9CC;
+    color: var(--main-color);
+}
+
+.buy .buy-form .flex .inputBox label{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    text-transform: none;
+    margin-top: 1.5rem;
+    color: var(--main-color);
+}
+
+.buy .buy-form .flex .inputBox .merch{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0;
+}
+
+/* FOOTER */
+.footer{
+    background-color: var(--main-color);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+    padding-left: 100px;
+}
+
+.footer .box-container .box h3{
+    color: #E4D9CC;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.footer .box-container .box a{
+    color: #E4D9CC;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    display: block;
+}
+
+.footer .box-container .box a:hover{
+    padding-left: 2rem;
+    color: var(--light-white);
+}
+
+.footer .credit{
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: .1rem solid #E4D9CC;
+    font-size: 2rem;
+    color: #E4D9CC;
+}
+
+
+
+
+
+
+/* media queries */
+@media only screen and (max-width: 1320px) {
+    .header {
+      padding: 0 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 1100px) {
+    .header {
+      padding: 0 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .burger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .burger .line {
+      width: 30px;
+      height: 3px;
+      background: var(--main-color);
+      margin: 6px 0;
+    }
+  
+    .header nav {
+      height: 0px;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: var(--white);
+      transition: 0.5s;
+      overflow: hidden;
+    }
+  
+    .header nav .active ul {
+      height: 450px;
+      opacity: 1;
+    }
+  
+    .header nav ul {
+      flex-direction: column;
+      display: block;
+      width: fit-content;
+      margin: 80px auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+      opacity: 0;
+    }
+  
+    .header nav ul li {
+      display: block;
+    }
+  
+    .header nav ul li a {
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+  }
+  

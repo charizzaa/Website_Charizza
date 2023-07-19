@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafeína</title>
+    <link  rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section Starts -->
+    <section class="header">
+        <div class="logo">
+            <a href="home.html"><img src="images/cafeina-1.png" alt="cafeína" width="120" height="120"></a>
+        </div>
+        <a href="#" class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="products.html">Our Products</a>
+                </li>
+                <li>
+                    <a href="merch.php" class="active">Merchandises</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <!-- Header Section Ends -->
+
+    <!-- Merchandise Section Starts -->
+    <section class="merch">
+        <h1 class="heading">Our Merchandises</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/mug.jpg" alt="mug" width="200px" height="200px">
+                </div>
+                <div class="content">
+                    <h3>Mug</h3>
+                    <p>A cafeina mug merchandise is a coffee mug specifically associated with 
+                        the brand or logo of cafeína. The cafeína mug merchandise is typically 
+                        made of high-quality ceramic  materials. It is designed to hold hot 
+                        beverages like coffee, tea, or hot chocolate and keep them warm for 
+                        an extended period. Cafeina mug merchandise is popular among coffee 
+                        enthusiasts, fans of the brand, and collectors of coffee-related items. </p>
+                        <div class="buy-now">
+                            <a href="buy.html" class="btn"><span>Buy Now</span></a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/tote.jpg" alt="tote" width="200px" height="200px">
+                </div>
+                <div class="content">
+                    <h3>Totebag</h3>
+                    <p>A cafeína tote bag merchandise is a reusable bag that features the brand 
+                        or logo of cafeína. It is designed to be carried over the shoulder or 
+                        by hand, providing a convenient and eco-friendly alternative to plastic bags. 
+                        Cafeína tote bags are typically made of durable materials such as cotton canvas. 
+                        The tote bags often have reinforced handles or straps for added strength and 
+                        comfort while carrying.</p>
+                        <div class="buy-now">
+                            <a href="buy.html" class="btn"><span>Buy Now</span></a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/tumblr.jpg" alt="tumbler" width="200px" height="200px">
+                </div>
+                <div class="content">
+                    <h3>Tumbler</h3>
+                    <p>A cafeína tumbler is a specific type of drinkware that is often used for carrying 
+                        hot or cold beverages on the go. A cafeína tumbler is typically made of 
+                        high-quality BPA-free plastic materials. It is designed to be durable, 
+                        insulated, and leak-proof, allowing the user to enjoy their favorite beverages 
+                        while keeping them at the desired temperature. Cafeína tumblers are popular 
+                        among on-the-go coffee enthusiasts.</p>
+                        <div class="buy-now">
+                            <a href="buy.html" class="btn"><span>Buy Now</span></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Merchandise Section Ends -->
+
+    <!-- Footer Section Starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#">Ask Questions</a>
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#">+123-456-789</a>
+                <a href="#">cafeina@gmail.com</a>
+                <a href="#">Yogyakarta, Indonesia</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook </a>
+                <a href="#">Twitter </a>
+                <a href="#">Instagram </a>
+            </div>
+        </div>
+        <div class="credit">Copyright © 2023 Cafeína. All rights reserved.</div>
+    </section>
+    <!-- Footer Section Ends -->
+    <script>
+        burger = document.querySelector(".burger");
+        burger.onclick = function(){
+            navBar = document.querySelector(".navbar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+</body>
